@@ -10,7 +10,7 @@ img { max-width:100%; height:auto; display:block; }
 
 /* Header */
 .site-header {
-  background: #3e8ad3; /* your desired header color */
+  background: #3e354d; /* your desired header color */
   border-bottom: 1px solid #eee; /* optional */
   color: #fff; /* default text color inside header */
 }
