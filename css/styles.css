@@ -9,9 +9,19 @@ img { max-width:100%; height:auto; display:block; }
 .header-inner { display:flex; align-items:center; justify-content:space-between; }
 
 /* Header */
+.site-header {
+  background: #3e8ad3; /* your desired header color */
+  border-bottom: 1px solid #eee; /* optional */
+  color: #fff; /* default text color inside header */
+}
+
 .site-header .site-nav a {
-  color: #fff;
-  background: #3e354d;
+  color: #fff; /* ensure links are white */
+}
+
+.site-header .site-nav a[aria-current="page"] {
+  color: #fff; /* active link stays white */
+  text-decoration: underline; /* keep underline for current page */
 }
 .logo { width:72px; height:auto; }
 .site-nav a { margin-left:20px; text-decoration:none; color:inherit; font-weight:500; }
