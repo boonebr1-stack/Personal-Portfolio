@@ -9,9 +9,8 @@ img { max-width:100%; height:auto; display:block; }
 .header-inner { display:flex; align-items:center; justify-content:space-between; }
 
 /* Header */
-.site-header .site-nav a[aria-current="page"] {
+.site-header .site-nav a {
   color: #fff;
-  text-decoration: underline;
 }
 .logo { width:72px; height:auto; }
 .site-nav a { margin-left:20px; text-decoration:none; color:inherit; font-weight:500; }
