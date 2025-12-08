@@ -1,8 +1,8 @@
 ```css
 /* Reset-ish */
 * { box-sizing: border-box; }
-html,body { margin:0; padding:0; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#111; background:#A40E4C; }
-img { max-width:100%; height:auto; display:block; }
+html,body { margin:0; padding:0; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#111; background:#FDFFFC; }
+img { max-width:80%; height:auto; display:block; }
 
 /* Layout helpers */
 .container { max-width:1000px; margin:0 auto; padding:24px; }
@@ -10,7 +10,7 @@ img { max-width:100%; height:auto; display:block; }
 
 /* Header */
 .site-header {
-  background: #FDFFFC; /* your desired header color */
+  background: #8A4FFF; /* your desired header color */
   border-bottom: 1px solid #eee; /* optional */
   color: #fff; /* default text color inside header */
 }
