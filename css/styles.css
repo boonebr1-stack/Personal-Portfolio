@@ -1,33 +1,28 @@
-```css
-/* Reset-ish */
 * { box-sizing: border-box; }
 html,body { margin:0; padding:0; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#111; background:#FDFFFC; }
 img { max-width:80%; height: 350px; display:block; }
 
-/* Layout helpers */
 .container { max-width:1000px; margin:0 auto; padding:24px; }
 .header-inner { display:flex; align-items:center; justify-content:space-between; }
 
-/* Header */
 .site-header {
-  background: #8A4FFF; /* your desired header color */
-  border-bottom: 1px solid #eee; /* optional */
-  color: #fff; /* default text color inside header */
+  background: #8A4FFF; 
+  border-bottom: 1px solid #eee; 
+  color: #fff; 
 }
 
 .site-header .site-nav a {
-  color: #fff; /* ensure links are white */
+  color: #fff; 
 }
 
 .site-header .site-nav a[aria-current="page"] {
-  color: #fff; /* active link stays white */
-  text-decoration: underline; /* keep underline for current page */
+  color: #fff; 
+  text-decoration: underline; 
 }
 .logo { width:72px; height:auto; }
 .site-nav a { margin-left:20px; text-decoration:none; color:inherit; font-weight:500; }
 .site-nav a[aria-current="page"] { text-decoration:underline; }
 
-/* Hero */
 .hero, .about-hero, .projects-hero, .contact-hero { padding:72px 0; text-align:center; }
 h1 { font-size:clamp(28px, 4vw, 44px); margin:0 0 16px; font-family: Georgia, 'Times New Roman', serif; }
 .lead { font-size:1.125rem; margin:12px 0 24px; }
@@ -42,14 +37,11 @@ h1 { font-size:clamp(28px, 4vw, 44px); margin:0 0 16px; font-family: Georgia, 'T
 .projects-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:18px; margin-top:24px; }
 .card { border:1px solid #eee; padding:18px; border-radius:10px; }
 
-/* Contact form */
 .contact-form { max-width:600px; margin:24px auto 0; display:flex; flex-direction:column; gap:12px; }
 .contact-form input, .contact-form textarea { padding:10px; border:1px solid #ddd; border-radius:6px; }
 
-/* Footer */
 .site-footer { border-top:1px solid #eee; padding:20px 0; text-align:center; }
 
-/* Mobile adjustments */
 @media (max-width:700px) {
   .header-inner { gap:12px; }
   .site-nav { display:flex; gap:12px; font-size:0.95rem; }
