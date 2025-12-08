@@ -9,7 +9,10 @@ img { max-width:100%; height:auto; display:block; }
 .header-inner { display:flex; align-items:center; justify-content:space-between; }
 
 /* Header */
-.site-header { border-bottom:1px solid #eee; background:#3e354d; }
+.site-header .site-nav a[aria-current="page"] {
+  color: #fff;
+  text-decoration: underline;
+}
 .logo { width:72px; height:auto; }
 .site-nav a { margin-left:20px; text-decoration:none; color:inherit; font-weight:500; }
 .site-nav a[aria-current="page"] { text-decoration:underline; }
