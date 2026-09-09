@@ -1,172 +1,157 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects — Brianna Boone</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+/* =========================
+   PROJECTS PAGE
+========================= */
 
-<body>
+.projects-page-hero {
+  padding: 120px 0 90px;
+}
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo-link" href="index.html" aria-label="Brianna Boone Home">
-        <img src="bblogo.jpg" alt="BB logo" class="logo">
-      </a>
+.projects-page-hero h1 {
+  max-width: 900px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  line-height: 0.98;
+  font-weight: 500;
+  margin: 20px 0 30px;
+}
 
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html" aria-current="page">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+.projects-intro {
+  max-width: 680px;
+  font-size: 1.2rem;
+  color: #666;
+}
 
-  <main>
-    <section class="container projects-hero">
+.projects-list {
+  padding-bottom: 120px;
+}
 
-      <h1>Selected Projects</h1>
+.project-feature {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 70px;
+  align-items: center;
 
-      <p class="lead">
-        A collection of coursework and personal projects showcasing my
-        development, design, and problem-solving skills.
-      </p>
+  padding: 100px 0;
+  border-top: 1px solid #dedbd8;
+}
 
-      <div class="projects-grid">
+.project-feature.reverse .project-media {
+  order: 2;
+}
 
-        <!-- Computer Hardware Project -->
-        <article class="project-card">
-
-          <div class="project-image">
-            <img
-              src="me2.jpg"
-              alt="Computer hardware diagnostics and repair project"
-            >
-          </div>
-
-          <div class="project-content">
-            <p class="project-category">Hardware & IT</p>
-
-            <h2>Computer Hardware Diagnostics & Repair</h2>
-
-            <p>
-              A project focused on identifying, diagnosing, and repairing
-              common computer hardware issues while applying troubleshooting
-              and problem-solving skills.
-            </p>
-
-            <div class="project-tags">
-              <span>Hardware</span>
-              <span>Troubleshooting</span>
-              <span>IT</span>
-            </div>
-          </div>
-
-        </article>
+.project-feature.reverse .project-details {
+  order: 1;
+}
 
 
-        <!-- Portfolio Website -->
-        <article class="project-card">
+/* PROJECT MEDIA */
 
-          <div class="project-image">
-            <img
-              src="images/portfolio.jpg"
-              alt="Screenshot of Brianna Boone portfolio website"
-            >
-          </div>
+.project-media {
+  width: 100%;
+}
 
-          <div class="project-content">
-            <p class="project-category">Web Development</p>
+.project-media-image,
+.project-media video {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
 
-            <h2>Portfolio Website</h2>
+.project-placeholder {
+  width: 100%;
+  height: 500px;
 
-            <p>
-              A personal website designed and developed to showcase my
-              projects, technical skills, experience, and background.
-            </p>
+  border-radius: 20px;
+  background: #eee7ff;
 
-            <div class="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Responsive Design</span>
-            </div>
-          </div>
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-        </article>
+  padding: 30px;
+  text-align: center;
 
-
-        <!-- 3D Printing -->
-        <article class="project-card">
-
-          <div class="project-image">
-            <img
-              src="images/3d-printing.jpg"
-              alt="3D printed prototype"
-            >
-          </div>
-
-          <div class="project-content">
-            <p class="project-category">Design & Prototyping</p>
-
-            <h2>3D Printing Project</h2>
-
-            <p>
-              A functional prototype created as part of a group project.
-              I was responsible for taking measurements and developing
-              the final model.
-            </p>
-
-            <div class="project-tags">
-              <span>3D Modeling</span>
-              <span>Prototyping</span>
-              <span>Design</span>
-            </div>
-          </div>
-
-        </article>
+  color: #7650c9;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
 
 
-        <!-- Python Teaching -->
-        <article class="project-card">
+/* PROJECT DESCRIPTION */
 
-          <div class="project-image">
-            <img
-              src="images/me1.jpg"
-              alt="Python teaching materials"
-            >
-          </div>
+.project-index {
+  color: #7650c9;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 15px;
+}
 
-          <div class="project-content">
-            <p class="project-category">Education & Technology</p>
+.project-details h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 25px;
+}
 
-            <h2>Python Teaching Project</h2>
+.project-summary {
+  font-size: 1.15rem;
+  color: #333;
+}
 
-            <p>
-              Interactive slides created to introduce secondary students
-              to basic Python programming concepts using PyCharm.
-            </p>
+.project-details > p:not(.project-index):not(.project-summary) {
+  color: #666;
+}
 
-            <div class="project-tags">
-              <span>Python</span>
-              <span>PyCharm</span>
-              <span>Education</span>
-            </div>
-          </div>
 
-        </article>
+/* TAGS */
 
-      </div>
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 25px;
+}
 
-    </section>
-  </main>
+.project-tags span {
+  padding: 7px 12px;
+  border: 1px solid #d8d3dc;
+  border-radius: 100px;
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Brianna Boone</p>
-    </div>
-  </footer>
+  font-size: 0.75rem;
+  color: #555;
 
-</body>
-</html>
+  background: #fff;
+}
+
+
+/* =========================
+   PROJECTS MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+  .projects-page-hero {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+
+  .project-feature {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 75px 0;
+  }
+
+  .project-feature.reverse .project-media,
+  .project-feature.reverse .project-details {
+    order: initial;
+  }
+
+  .project-media-image,
+  .project-media video,
+  .project-placeholder {
+    height: 350px;
+  }
+}
