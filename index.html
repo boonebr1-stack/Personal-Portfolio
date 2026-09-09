@@ -3,53 +3,212 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Brianna Boone — Home</title>
+  <title>Brianna Boone — Software, Design & Technology</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+
   <header class="site-header">
     <div class="container header-inner">
+
       <a class="logo-link" href="index.html" aria-label="Brianna Boone Home">
         <img src="bblogo.jpg" alt="BB logo" class="logo">
       </a>
+
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
+        <a href="index.html" aria-current="page">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
       </nav>
+
     </div>
   </header>
 
+
   <main>
-    <section class="hero container">
-      <h1>Hello — I’m Brianna</h1>
-      <p class="lead">A Senior majoring in Information Science at Michigan State University, I focus on creating clean, modern, and user-friendly web experiences. I enjoy turning ideas into functional designs and continuously improving my skills as new technologies emerge. Whether I’m building interfaces, exploring new tools, or refining my coding practice, I’m driven by curiosity and a passion for creating meaningful digital work.</p>
-      <p class="cta-row"><a class="btn" href="about.html">Learn more about me</a> <a class="btn btn-outline" href="projects.html">See my projects</a></p>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+
+        <p class="eyebrow">SOFTWARE • DESIGN • TECHNOLOGY</p>
+
+        <h1>
+          Hi, I'm <span>Brianna.</span>
+        </h1>
+
+        <p class="hero-description">
+          I create thoughtful digital experiences that bring together
+          technology, design, and problem-solving.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn" href="projects.html">View my work</a>
+          <a class="btn btn-outline" href="about.html">About me</a>
+        </div>
+
+      </div>
     </section>
 
-    <section class="highlights container">
-      <article>
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML5 & CSS3 (Flexbox / Grid)</li>
-          <li>Responsive design</li>
-          <li>JavaScript basics</li>
-        </ul>
-      </article>
 
-      <article>
-        <h2>Interests</h2>
-        <p>Web development, UX/UI design, product design, and creative problem solving.</p>
-      </article>
+    <!-- INTRO -->
+    <section class="intro-section">
+      <div class="container intro-grid">
+
+        <div class="section-label">
+          <p>01 / ABOUT</p>
+        </div>
+
+        <div class="intro-content">
+          <h2>
+            Developer, designer, and problem solver.
+          </h2>
+
+          <p>
+            I'm a Michigan State University graduate with a background in
+            Information Science and Information Technology. I enjoy turning
+            ideas into functional, user-focused digital experiences through
+            software development, interface design, and emerging technologies.
+          </p>
+
+          <a class="text-link" href="about.html">
+            More about me →
+          </a>
+        </div>
+
+      </div>
     </section>
+
+
+    <!-- FEATURED WORK -->
+    <section class="featured-work">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="section-label-text">02 / SELECTED WORK</p>
+            <h2>Things I've built.</h2>
+          </div>
+
+          <a class="text-link" href="projects.html">
+            View all projects →
+          </a>
+        </div>
+
+
+        <div class="featured-projects">
+
+          <a href="projects.html" class="featured-project">
+            <div>
+              <p class="project-number">01</p>
+              <h3>TrueSpend</h3>
+              <p>Native iOS personal finance application.</p>
+            </div>
+
+            <div class="project-tech">
+              Swift • SwiftUI • Xcode
+            </div>
+
+            <span class="project-arrow">↗</span>
+          </a>
+
+
+          <a href="projects.html" class="featured-project">
+            <div>
+              <p class="project-number">02</p>
+              <h3>Jobly AI</h3>
+              <p>Job matching and skills analysis web application.</p>
+            </div>
+
+            <div class="project-tech">
+              Python • Flask • JavaScript
+            </div>
+
+            <span class="project-arrow">↗</span>
+          </a>
+
+
+          <a href="projects.html" class="featured-project">
+            <div>
+              <p class="project-number">03</p>
+              <h3>Mentor Database</h3>
+              <p>
+                Digital mentor directory and onboarding experience.
+              </p>
+            </div>
+
+            <div class="project-tech">
+              Power Apps • UX/UI
+            </div>
+
+            <span class="project-arrow">↗</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="skills-section">
+      <div class="container skills-grid">
+
+        <div>
+          <p class="section-label-text">03 / WHAT I DO</p>
+          <h2>Building across disciplines.</h2>
+        </div>
+
+        <div class="skill-list">
+
+          <div class="skill-item">
+            <h3>Software Development</h3>
+            <p>Python, Java, Swift, Kotlin, JavaScript & SQL</p>
+          </div>
+
+          <div class="skill-item">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, Flask, REST APIs & responsive design</p>
+          </div>
+
+          <div class="skill-item">
+            <h3>Product & UX/UI</h3>
+            <p>Figma, prototyping, interface design & user-centered design</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT CTA -->
+    <section class="home-contact">
+      <div class="container">
+
+        <p class="section-label-text">LET'S CONNECT</p>
+
+        <h2>
+          Have something interesting<br>
+          in mind?
+        </h2>
+
+        <a class="btn" href="contact.html">Get in touch →</a>
+
+      </div>
+    </section>
+
   </main>
 
+
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Brianna Boone</p>
+    <div class="container footer-inner">
+      <p>© 2026 Brianna Boone</p>
+      <p>Designed & developed by Brianna.</p>
     </div>
   </footer>
+
 </body>
 </html>
-```
