@@ -1,157 +1,317 @@
-/* =========================
-   PROJECTS PAGE
-========================= */
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Brianna Boone</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
-.projects-page-hero {
-  padding: 120px 0 90px;
-}
+<body>
 
-.projects-page-hero h1 {
-  max-width: 900px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.5rem, 7vw, 6.5rem);
-  line-height: 0.98;
-  font-weight: 500;
-  margin: 20px 0 30px;
-}
+  <header class="site-header">
+    <div class="container header-inner">
 
-.projects-intro {
-  max-width: 680px;
-  font-size: 1.2rem;
-  color: #666;
-}
+      <a class="logo-link" href="index.html" aria-label="Brianna Boone Home">
+        <img src="bblogo.jpg" alt="BB logo" class="logo">
+      </a>
 
-.projects-list {
-  padding-bottom: 120px;
-}
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-.project-feature {
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 70px;
-  align-items: center;
-
-  padding: 100px 0;
-  border-top: 1px solid #dedbd8;
-}
-
-.project-feature.reverse .project-media {
-  order: 2;
-}
-
-.project-feature.reverse .project-details {
-  order: 1;
-}
+    </div>
+  </header>
 
 
-/* PROJECT MEDIA */
+  <main>
 
-.project-media {
-  width: 100%;
-}
+    <!-- PROJECTS INTRO -->
+    <section class="projects-page-hero">
+      <div class="container">
 
-.project-media-image,
-.project-media video {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 20px;
-}
+        <p class="eyebrow">SELECTED WORK</p>
 
-.project-placeholder {
-  width: 100%;
-  height: 500px;
+        <h1>Projects I've built, designed, and explored.</h1>
 
-  border-radius: 20px;
-  background: #eee7ff;
+        <p class="projects-intro">
+          A collection of software, design, and technology projects focused on
+          creating useful experiences and solving real-world problems.
+        </p>
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 30px;
-  text-align: center;
-
-  color: #7650c9;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
+      </div>
+    </section>
 
 
-/* PROJECT DESCRIPTION */
-
-.project-index {
-  color: #7650c9;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  margin-bottom: 15px;
-}
-
-.project-details h2 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 25px;
-}
-
-.project-summary {
-  font-size: 1.15rem;
-  color: #333;
-}
-
-.project-details > p:not(.project-index):not(.project-summary) {
-  color: #666;
-}
+    <!-- PROJECT LIST -->
+    <section class="projects-list">
+      <div class="container">
 
 
-/* TAGS */
+        <!-- TRUE SPEND -->
+        <article class="project-feature">
 
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 25px;
-}
+          <div class="project-media">
 
-.project-tags span {
-  padding: 7px 12px;
-  border: 1px solid #d8d3dc;
-  border-radius: 100px;
+            <!-- Replace with a screenshot OR video later -->
+            <div class="project-placeholder">
+              <span>TrueSpend preview coming soon</span>
+            </div>
 
-  font-size: 0.75rem;
-  color: #555;
+          </div>
 
-  background: #fff;
-}
+          <div class="project-details">
+
+            <p class="project-index">01 / MOBILE DEVELOPMENT</p>
+
+            <h2>TrueSpend</h2>
+
+            <p class="project-summary">
+              A native iOS personal finance application designed to make
+              everyday spending easier to understand and manage.
+            </p>
+
+            <p>
+              I designed and developed TrueSpend using Swift, SwiftUI, and
+              Xcode. The application includes interactive expense entry,
+              reusable interface components, state management, tab-based
+              navigation, and an animated introductory experience.
+            </p>
+
+            <div class="project-tags">
+              <span>Swift</span>
+              <span>SwiftUI</span>
+              <span>Xcode</span>
+              <span>UI/UX</span>
+            </div>
+
+          </div>
+
+        </article>
 
 
-/* =========================
-   PROJECTS MOBILE
-========================= */
+        <!-- JOBLY AI -->
+        <article class="project-feature reverse">
 
-@media (max-width: 800px) {
+          <div class="project-media">
 
-  .projects-page-hero {
-    padding-top: 90px;
-    padding-bottom: 60px;
-  }
+            <div class="project-placeholder">
+              <span>Jobly AI preview</span>
+            </div>
 
-  .project-feature {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    padding: 75px 0;
-  }
+          </div>
 
-  .project-feature.reverse .project-media,
-  .project-feature.reverse .project-details {
-    order: initial;
-  }
+          <div class="project-details">
 
-  .project-media-image,
-  .project-media video,
-  .project-placeholder {
-    height: 350px;
-  }
-}
+            <p class="project-index">02 / WEB DEVELOPMENT</p>
+
+            <h2>Jobly AI</h2>
+
+            <p class="project-summary">
+              A job analysis web application that compares a user's skills
+              against job requirements and highlights areas for improvement.
+            </p>
+
+            <p>
+              Built with Python, Flask, JavaScript, HTML, and CSS, the project
+              processes job information and returns a match percentage,
+              matching skills, missing skills, and recommendations.
+            </p>
+
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>JavaScript</span>
+              <span>HTML/CSS</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- MENTOR DATABASE -->
+        <article class="project-feature">
+
+          <div class="project-media">
+
+            <div class="project-placeholder">
+              <span>Mentor Database preview</span>
+            </div>
+
+          </div>
+
+          <div class="project-details">
+
+            <p class="project-index">03 / PRODUCT DESIGN</p>
+
+            <h2>Resident & Mentor Database</h2>
+
+            <p class="project-summary">
+              A redesigned digital directory and onboarding experience for
+              Michigan State University's College of Osteopathic Medicine.
+            </p>
+
+            <p>
+              My capstone team worked on improving how physician and resident
+              mentor information was collected, organized, and accessed. I
+              contributed to the Power Apps redesign, mentor registration
+              workflow, interface concepts, and supporting user experience
+              decisions.
+            </p>
+
+            <div class="project-tags">
+              <span>Power Apps</span>
+              <span>Figma</span>
+              <span>UX/UI</span>
+              <span>Product Design</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- PORTFOLIO -->
+        <article class="project-feature reverse">
+
+          <div class="project-media">
+
+            <div class="project-placeholder">
+              <span>Portfolio website preview</span>
+            </div>
+
+          </div>
+
+          <div class="project-details">
+
+            <p class="project-index">04 / FRONT-END DEVELOPMENT</p>
+
+            <h2>Personal Portfolio</h2>
+
+            <p class="project-summary">
+              A responsive portfolio website designed and developed to present
+              my technical work, design projects, and professional background.
+            </p>
+
+            <p>
+              I built the site using HTML and CSS and continue refining its
+              responsive layout, visual hierarchy, accessibility, and overall
+              user experience.
+            </p>
+
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Responsive Design</span>
+              <span>UI Design</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- 3D PRINTING -->
+        <article class="project-feature">
+
+          <div class="project-media">
+
+            <img
+              src="images/3d-printing.jpg"
+              alt="3D printed prototype project"
+              class="project-media-image"
+            >
+
+          </div>
+
+          <div class="project-details">
+
+            <p class="project-index">05 / DESIGN & PROTOTYPING</p>
+
+            <h2>3D Printed Prototype</h2>
+
+            <p class="project-summary">
+              A functional prototype created through collaborative engineering,
+              measurement, modeling, and iterative design.
+            </p>
+
+            <p>
+              I contributed to the design process by taking measurements and
+              developing the final digital model using NX before the prototype
+              was produced through 3D printing.
+            </p>
+
+            <div class="project-tags">
+              <span>NX</span>
+              <span>3D Modeling</span>
+              <span>Prototyping</span>
+              <span>Design</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- TANZANIA -->
+        <article class="project-feature reverse">
+
+          <div class="project-media">
+
+            <img
+              src="me2.jpg"
+              alt="Technology project work in Tanzania"
+              class="project-media-image"
+            >
+
+          </div>
+
+          <div class="project-details">
+
+            <p class="project-index">06 / TECHNOLOGY & NETWORKING</p>
+
+            <h2>Tanzania Technology Project</h2>
+
+            <p class="project-summary">
+              Hands-on technology work supporting schools and communities
+              during an international education program in Tanzania.
+            </p>
+
+            <p>
+              I worked with networking equipment, installed Wi-Fi routers,
+              created and tested Ethernet cables, repaired laptops, supported
+              hardware installation, and helped teach introductory programming
+              and digital skills.
+            </p>
+
+            <div class="project-tags">
+              <span>Networking</span>
+              <span>Hardware</span>
+              <span>Python</span>
+              <span>Troubleshooting</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Brianna Boone</p>
+      <p>Designed & developed by Brianna.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
