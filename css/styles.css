@@ -627,8 +627,8 @@ h2 {
 }
 
 .project-media-image {
-  width: 50%;
-  height: 250px;
+  width: 25%;
+  height: 100px;
   object-fit: cover;
   border-radius: 20px;
 }
